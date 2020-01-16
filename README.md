@@ -44,10 +44,12 @@ If running on unix-based systems:
 Note that the makefile includes the directory in which the library is installed, this needs to be changed to the relevant directory. Additionally, before running the program, the library need to be made visible to the operating system. This can be done with the following lines in bash:
 
 $ LD_LIBRARY_PATH=/usr/local/lib
-$ export LD_LIBRARY_PATH
-$ ./example
 
-see [this guide](https://www.gnu.org/software/gsl/doc/html/usage.html) for more information.
+$ export LD_LIBRARY_PATH
+
+$ ./myofiberModel
+
+See [this guide](https://www.gnu.org/software/gsl/doc/html/usage.html) for more information.
 
 Before running the program "myofiberModel", there should be an empy directory called "simulations" in the same directory as the program. The outputs of the simulations will be stored in that directory.
 
