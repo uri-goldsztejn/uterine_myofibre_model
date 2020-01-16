@@ -58,7 +58,6 @@ When the program is executed, it prompts the user to enter values for the simula
 Default values appear in brakets.
 
 + Simulation name: identifier for the simulation, the output file names will include this name.
-+ Notes: the user can add notes about this simulation for future reference. These notes will be saved in the metadata file.
 + IR: the intercellular resistivity. See the original article for more information on this parameter and it's definition.
 + Ionic channel modulations: The modulation is a multiplicative factor that alters the conductivity of the given ionic channel.
 A modulation of 1, will have no effect on the ionic current, a modulation of 0 will delete this current from the model.
@@ -70,5 +69,6 @@ The following parameters can be changed if this option is chosen:
 + Time to turn on the stimulator: the time during the simulation at which the stimulator will be turn on.
 + Time to turn off the stimulator: the time during the simulation at which the stimulator will be turn off.
 + Step current: the current that will be injected to the first cell in the fiber while the stimulator is on.
++ Notes: the user can add notes about this simulation for future reference. These notes will be saved in the metadata file.
 
 
