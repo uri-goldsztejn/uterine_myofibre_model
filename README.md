@@ -9,6 +9,7 @@ This is the code developed for our paper in ____:
 * Files
 * Software requirements
 * How to use
+* Contact
 
 ## Overview
 
@@ -71,4 +72,6 @@ The following parameters can be changed if this option is chosen:
 + Step current: the current that will be injected to the first cell in the fiber while the stimulator is on.
 + Notes: the user can add notes about this simulation for future reference. These notes will be saved in the metadata file.
 
-
+## Contact
+Uri Goldsztejn
+uri.goldsztejn@wustl.edu
