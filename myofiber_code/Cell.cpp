@@ -15,7 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.If not, see <http://www.gnu.org/licenses/>.
 */
-
+//#include "stdafx.h" //uncomment this line to run in Microsoft's Visual Studio
 #include "Cell.h"
 
 int Cell::existingCells = 0;
@@ -121,7 +121,8 @@ double Cell::getCaFlux()
 		-  iNaCaX.jnaca(parameters) + iPMCA.getCurrent(parameters));
 }
 
-// If we prefer to have the intracellular Na+, K+, and Cl- concentrations updated, uncomment the code in the following 3 methods.
+// If we prefer to have the intracellular Na+, K+, and Cl- concentrations updated in each iteration, uncomment the code in the following 3 methods. 
+// This was not used in our model but can be used in the future to investigate the effects of electrolyte changes.
 double Cell::getNaFlux() {
 	return 0;
 	/*double a = ina.getCurrent(parameters);

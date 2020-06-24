@@ -26,7 +26,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 
 // This class represents the myofiber. It is a container for the cells that stores the cells and performs calculations that involve the entire array.
-// Only one instance of this class is used in the program.
+// Only one instance of this class is used in the program (singleton).
 
 class StringOfCellsContainer {
 private:
@@ -42,7 +42,7 @@ private:
 		double kx2 = 8.8;
 		double beta = 7.5;
 		double lopt = 100.0;
-		double famp = 130;//1.3
+		double famp = 130;
 		double vx = 5;
 		double fam = 85.5;
 		double us = 0.01;

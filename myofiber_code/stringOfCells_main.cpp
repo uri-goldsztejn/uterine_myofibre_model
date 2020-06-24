@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-#include"stdafx.h"
+//#include"stdafx.h" //uncomment this line to run in Microsoft's Visual Studio
 #include "Stimulator.h"
 #include "Cell.h"
 #include <iostream>
@@ -85,7 +85,7 @@ int main()
 	int simulationTime = 1000; //ms
 	size_t numberCells = 70;
 	//Stimulator options
-	double stON = 0.0, stOFF = 20.0, stBCL = 5000.0, tBON = 0.0, tBOFF = 20.0, stHold = 0.0, stStep = -5.0;
+	double stON = 70.0, stOFF = 100.0, stBCL = 5000.0, tBON = 0.0, tBOFF = 100.0, stHold = 0.0, stStep = -5.0;
 	cout << "Change more parameters? [Y/N]: ";
 	cin >> tmp;
 	if (tmp == "Y" || tmp =="y")
@@ -113,11 +113,11 @@ int main()
 		}
 
 		// stimulator OFF
-		cout << "Enter time to turn off the stimulus [ms] (20): ";
+		cout << "Enter time to turn off the stimulus [ms] (30): ";
 		cin >> tmp;
 		if (is_number(tmp)) {
 			stOFF = stoi(tmp);
-			tBOFF = stOFF; //delete this line if uncommenting the following lines
+			tBOFF = stOFF; //Comment out this line if uncommenting the following lines
 		}
 
 		// Uncomment the following lines to add periodic stimulations to the stimulator
@@ -197,9 +197,9 @@ int main()
 	metaData << "Cl modulation = " << modulations[6] << endl;
 	
 
-	metaData << "\n\n\nSimulation based on the model developed in \"A myofiber model for the uterine excitation contraction dynamics\"" << endl;
+	metaData << "\n\n\nSimulation based on the model developed in \"A myofibre model for the study of uterine excitation-contraction dynamics\"" << endl;
 	metaData << "By Uri Goldsztejn and Arye Nehorai" << endl;
-	metaData << "This simulation was performed using software version " << version << endl;
+	//metaData << "This simulation was performed using software version " << version << endl;
 	metaData << "This software is protected by the GNU General Public License" << endl;
 
 	// write data to output files

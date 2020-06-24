@@ -15,6 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.If not, see <http://www.gnu.org/licenses/>.
 */
+//#include "stdafx.h" //uncomment this line to run in Microsoft's Visual Studio
 
 #include "StringOfCellsContainer.h"
 
@@ -30,7 +31,7 @@ StringOfCellsContainer::StringOfCellsContainer(Stimulator stim, size_t numberOfC
 	if (modulations.size() < 4)
 	{
 		cout << "missing modulation values" << endl;
-		return; // should throw something
+		return; 
 	}
 
 	for (size_t i = 0; i < numberOfCells_; i++)
@@ -52,7 +53,7 @@ void StringOfCellsContainer::iterateV2() {
 	vector<Cell>::iterator it = cells_.begin();
 	double currentStimulus = stim_.getCurrent();
 	previousVoltage = it->getVoltage();
-	it->iterate(0, currentStimulus); // no diffused voltage
+	it->iterate(0, currentStimulus); // no diffused voltage in the first cell
 
 
 	for (it++; it != (cells_.end() -1); ++it) {
@@ -81,7 +82,7 @@ void StringOfCellsContainer::iterateV2() {
 
 	//solve lengths - after all ionic currents and voltages were updated
 	
-	//comment out the next line to fix the lengths. Not calling the following function makes the simulations faster by ignoring the mechanical component of the model.
+	//comment out the next line to maintain constant lengths nad make simulations faster (use for debugging only). Not calling the following function makes the simulations faster by ignoring the mechanical component of the model.
 	// The results presented in the paper use the following function.
 	solveMechanics(); // this function changes the lengths
 }

@@ -35,7 +35,7 @@ protected:
 	
 	CellParameters parameters;
 	
-	// These currents were derived in Tong et al. They can be changed for better models in the future
+	// These currents were derived in Tong et al. They can be changed for other models in the future
 	Ina ina; ICaL iCaL; ICaT iCaT; Ib ib; IK1 iK1; IK2 iK2; BKa bKa; BKab bKab;
 	IKa iKa; Ih ih; ICl iC1; INSCC iNSCC; INaK iNaK; NaCaX iNaCaX; PMCA iPMCA;
 
