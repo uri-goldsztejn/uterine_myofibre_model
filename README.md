@@ -25,7 +25,7 @@ Uterine contraction disorders can contribute to preterm births, slow progression
 * This model needs to be compiled using a C++11 compiler, or newer.
 * GNU Scientific Library (GSL) 2.4 or above.
 This library and it's documentation can be found [here](https://www.gnu.org/software/gsl/).
-The lite version does not use the GSL and can be run without it.
+<!---*The lite version does not use the GSL and can be run without it.!--->
 
 
 #### GSL installation on Unix based systems
