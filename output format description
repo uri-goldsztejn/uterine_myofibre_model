@@ -1,4 +1,4 @@
-## The simulation produces 6 “.txt” files that are written in the /simulations folder.
+ The simulation produces 6 “.txt” files that are written in the /simulations folder.
 
 If a name is not given to the simulation, the outputs are named "simulation_standard_<X>.txt" where <X> identifies the different files produced.
 If a name is given to the simulation, then the files are named "<name>_<X>.txt".
