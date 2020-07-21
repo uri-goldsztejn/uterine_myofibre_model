@@ -1,0 +1,23 @@
+## The simulation produces 6 “.txt” files that are written in the /simulations folder.
+
+If a name is not given to the simulation, the outputs are named "simulation_standard_<X>.txt" where <X> identifies the different files produced.
+If a name is given to the simulation, then the files are named "<name>_<X>.txt".
+
+<X> takes the names: metadata, voltage, calcium, phosphorilation, lengths, and force.
+
+The structure of the files generated is described below.
+
+The metadata file first contains notes that can be optionally written by the user at the start of the simulation.
+The file then contains the parameter values used in the simulation.
+
+The "voltage" file has <n> tab-separated, columns of doubles. <n> is the number of cells in the simulated fibre, the fibre contains 70 cells by default and this number can be changed
+at the beginning of the simulation. Each row corresponds to a time step in the simulation.
+Each value in this file corresponds to the transmembrane voltage, in mV, of each cell (column) at every time step (row).
+
+The "calcium" file follows the same structure as the "voltage" file. However, in this file each value corresponds to the intracellular calcium, in mM, of each cell (column) and at each time step (row).
+
+The "phosphorilation" file has 2<n> space-separated columns of doubles. As in the voltage file, <n> is the number of cells in the fibre. Every two columns correspond to the fraction of myosin bounded to actin (AM state) and the fraction of phosphorilated myosin bounded to actin (AMp state). These fractions are expressed as fractions of 1. Each row corresponds to a time step in the simulation. In this model, these phosphorylation states are responsible for generating the contractile force. Please refer to the Methods section of the manuscript for further information.
+
+The “lengths” file follows the same structure as the "voltage" file. However, in this file each value corresponds to the cellular length, in um, of each cell (column) and at each time step (row).
+
+The “force” file contains 1 column of doubles that correspond to the force developed by the entire myofibre, in uN. Each row corresponds to a time step in the simulation.
