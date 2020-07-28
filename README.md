@@ -50,7 +50,7 @@ $ LD_LIBRARY_PATH=/usr/local/lib
 
 $ export LD_LIBRARY_PATH
 
-$ ./myofiberModel
+$ ./myofibreModel
 
 See [this guide](https://www.gnu.org/software/gsl/doc/html/usage.html) for more information.
 
