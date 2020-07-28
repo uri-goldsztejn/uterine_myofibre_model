@@ -44,7 +44,7 @@ These libraries can be linked to the project.
 
 After the GNU scientific library is installed, compile and link the program (see makefile in the code folder).
 If running on unix-based systems:
-Note that the makefile includes the directory in which the library is installed, this needs to be changed to the relevant directory. Additionally, before running the program, the library need to be made visible to the operating system. This can be done with the following lines in bash:
+Note that the makefile includes the directory in which the library is installed, this needs to be changed to the relevant directory. Additionally, before running the program, the library needs to be made visible to the operating system. This can be done with the following lines in bash:
 
 $ LD_LIBRARY_PATH=/usr/local/lib
 
@@ -54,7 +54,7 @@ $ ./myofibreModel
 
 See [this guide](https://www.gnu.org/software/gsl/doc/html/usage.html) for more information.
 
-Before running the program "myofiberModel", there should be an empy directory called "simulations" in the same directory as the program. The outputs of the simulations will be stored in that directory.
+Before running the program "myofibreModel", there should be an empy directory called "simulations" in the same directory as the program. The outputs of the simulations will be stored in that directory.
 
 #### Simulation parameters
 When the program is executed, it prompts the user to enter values for the simulation parameters.
