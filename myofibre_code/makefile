@@ -2,7 +2,7 @@ CCFLAGS = -std=c++11 -Wall -I/home/research/uri.goldsztejn/gsl/include/gsl
 CLFLAG = -L/home/research/uri.goldsztejn/gsl/lib
 
 all : stringOfCells_main.o StringOfCellsContainer.o Stimulator.o Cell.o
-	g++ $(-L/home/research/uri.goldsztejn/gsl/lib) -o myofibreModel stringOfCells_main.o StringOfCellsContainer.o Stimulator.o Cell.o -lgsl -lgslcblas -lm 
+	g++ $(CLFLAG) -o myofibreModel stringOfCells_main.o StringOfCellsContainer.o Stimulator.o Cell.o -lgsl -lgslcblas -lm 
 
 stringOfCells_main.o : stringOfCells_main.cpp  Stimulator.h Cell.h StringOfCellsContainer.h
 	g++ $(CCFLAGS) -c stringOfCells_main.cpp
