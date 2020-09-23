@@ -1,8 +1,14 @@
 # A myofibre model for the study of uterine excitation-contraction dynamics
-[![DOI]()]()
+<!--[![DOI]()]()-->
+<!--This is the code developed for our paper ____:-->
+<!--(link)-->
+This is the code developed for our paper "[A myofibre model for the study of uterine excitation-contraction dynamics]()":
 
-This is the code developed for our paper ____:
-(link)
+Uri Goldsztejn, Arye Nehorai
+
+Washington University in St. Louis, 2020
+
+*If you find this code useful in your research, please consider citing.*
 
 ## Content
 * Overview
