@@ -2,7 +2,7 @@
 <!--[![DOI]()]()-->
 <!--This is the code developed for our paper ____:-->
 <!--(link)-->
-This is the code developed for our paper "[A myofibre model for the study of uterine excitation-contraction dynamics]()":\
+This is the code developed for our paper "[A myofibre model for the study of uterine excitation-contraction dynamics](https://www.ese.wustl.edu/~nehorai/research/uterine_myofiber/Goldsztejn_Nehorai_Scientific_Reports.html)":\
 (Manuscript has been accepted for publication in Scientific Reports and will be published online soon)\
 Uri Goldsztejn, Arye Nehorai
 
