@@ -3,7 +3,7 @@
 <!--This is the code developed for our paper ____:-->
 <!--(link)-->
 This is the code developed for our paper "[A myofibre model for the study of uterine excitation-contraction dynamics](http://www.nature.com/articles/s41598-020-72562-x)":\
-(Manuscript has been accepted for publication in Scientific Reports and will be published online on 1st Oct)\
+<!--(Manuscript has been accepted for publication in Scientific Reports and will be published online on 1st Oct)\-->
 Uri Goldsztejn, Arye Nehorai
 
 Washington University in St. Louis, 2020
@@ -15,6 +15,7 @@ Washington University in St. Louis, 2020
 * Files
 * Software requirements
 * How to use
+* Citation
 * Contact
 
 ## Overview
@@ -79,6 +80,10 @@ The following parameters can be changed if this option is chosen:
 + Time to turn off the stimulator: the time during the simulation at which the stimulator will be turn off.
 + Step current: the current that will be injected to the first cell in the fiber while the stimulator is on.
 + Notes: the user can add notes about this simulation for future reference. These notes will be saved in the metadata file.
+
+## Citation
+
+Goldsztejn, U., Nehorai, A. A myofibre model for the study of uterine excitation-contraction dynamics. Sci Rep 10, 16221 (2020). https://doi.org/10.1038/s41598-020-72562-x
 
 ## Contact
 Uri Goldsztejn
